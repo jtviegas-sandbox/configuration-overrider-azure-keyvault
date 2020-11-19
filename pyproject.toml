@@ -1,0 +1,19 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "config_overrider_azure_keyvault"
+home-page = "https://github.com/jtviegas/configuration-overrider-azure-keyvault"
+author = "jtviegas"
+dist-name = "configuration-overrider-azure-keyvault"
+author-email = "jtviegas.js@gmail.com"
+requires-python = ">=3.7"
+requires = [
+    "configuration-overrider==0.0.1",
+    "azure-keyvault-secrets==4.2.0",
+    "azure-identity==1.5.0",
+]
+classifiers = [
+    "Programming Language :: Python :: 3.7",
+]
