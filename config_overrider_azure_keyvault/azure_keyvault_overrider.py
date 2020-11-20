@@ -1,12 +1,13 @@
 import logging
 
-from configuration_overrider.abstract_overrider import AbstractOverrider
+from configuration_overrider.abstract_overrider import AbstractOverrider, overrider_impl
 
 from config_overrider_azure_keyvault.azure_keyvault_reader import AzureKeyVaultReader
 
 log = logging.getLogger(__name__)
 
 
+@overrider_impl
 class AzureKeyVaultOverrider(AbstractOverrider):
 
     def __init__(self, config: dict):
