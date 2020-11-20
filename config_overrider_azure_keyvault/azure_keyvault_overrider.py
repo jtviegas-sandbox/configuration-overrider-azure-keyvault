@@ -7,7 +7,6 @@ from config_overrider_azure_keyvault.azure_keyvault_reader import AzureKeyVaultR
 log = logging.getLogger(__name__)
 
 
-@overrider_impl
 class AzureKeyVaultOverrider(AbstractOverrider):
 
     def __init__(self, config: dict):
